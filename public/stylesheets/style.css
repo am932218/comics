@@ -2,7 +2,11 @@ body {
 	background-image:url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
 	background-size: 100% 1000px;
 	background-repeat:no-repeat;
-
+	font-family: 'Robot Mono', monospace;
+	font-size: 16px;
+	color:white;
+}
+/* 
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -10,3 +14,4 @@ body {
 a {
   color: #00B7FF;
 }
+*/
