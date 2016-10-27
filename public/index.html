@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Daily Comics</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<form>
+Enter a number for a comic: <input type="text" id="cityfield" value=""><br>
+<input id="button" type="submit" value"Enter">
+<div id="txtHint"></div>
+</form>
+<script>
+$( "#button" ).click(function(e) {
+e.preventDefault();
+  var url = "http://ec2-52-36-65-171.us-west-2.compute.amazonaws.com:3000/getcomic?q="+$("#cityfield").val();
+  $.getJSON(url,function(data) {
+    var everything;
+    everything = '<img src = "' + data.img + '">';
+    console.log(data.img);
+    $("#txtHint").html(everything);
+  });
+});
+
+</script>
+</body>
+</html>
+
